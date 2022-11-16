@@ -1,0 +1,233 @@
+@media only screen and (max-width: 414px) {
+    section.first {
+        height: initial;
+
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .title-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        padding-bottom: 100px;
+        padding-top: 60px;
+    }
+    .menu div a {
+        color: #737373;
+        font-size: 25px;
+    }
+    #menuList {
+        display: none;
+    }
+    header {
+        background-color: #F6F6F6;
+        height: initial;
+    }
+    .title h3 {
+        color: #252B42;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .icon-menu {
+        display: block;
+    } 
+    .icon-menu iconify-icon {
+        size: 50px;
+    }
+    content {
+      height: 1269px;
+    }
+    
+    .main-text h1 {
+        font-size: 40px;
+        font-weight: 700;
+        width: 313px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .second-text h4 {
+        width: 302px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blue-button.main-content-button {
+        margin: 0;
+        margin-bottom: 10px; 
+    }
+    .white-transparent-button.main-content-button {
+        width: 154px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blue-button.individual-pricing-button {
+        display: none;
+    }
+    .content-right {
+        display: flex;
+        justify-content: center;
+    }
+    .offer {
+        width: 330px;
+    }
+
+    .offer p{
+        width: 330px;
+    }
+    section.second {
+        height: 1646px;
+    }
+    .title-section h2 {
+        width: 323px;
+    }
+    .title-section p {
+        width: 323px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 328px;
+    }
+    .card-header {
+        background-color: #D9EDFF;
+    }
+    .main-text-card h5 {
+        color: black;
+    }
+    .card-item {
+        margin-bottom: 30px;
+    }
+    section.third {
+        height: 1225px;
+    }
+    .opinion {
+        width: 301px;
+    }
+    .opinion p {
+        width: 301px;
+    }
+    .comment {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        gap: 30px;
+    }
+    .comment-item {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        width: initial;
+    }
+    .comment-content {
+        height: initial;
+    }
+    .comment-content h6 {
+        width: 234px;
+    }
+    .information {
+        display: flex;
+        justify-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        margin-bottom: 0;
+    }
+    .row:nth-child(3) {
+        display: none;
+    }
+    .row-card {
+        height: initial;
+    }
+    .container {
+        height: initial;
+    }
+    section.fifth {
+        height: initial;
+        margin-bottom: 80px;
+    }
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+        align-items: center;
+        gap: 30px;
+    }
+    .header-section-sixth {
+        height: initial;
+    }
+    .second-text-in-touch p {
+        display: none;
+    }
+    .text-in-touch {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-text-in-touch h2 {
+        font-size: 24px;
+        text-align: center;
+        line-height: 32px;
+    }
+    form.content {
+        height: 45px;
+    }
+    form.content input {
+        width: 220px;
+    }
+    .right-section-in-touch {
+        width: initial;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .footer-get-in-touch {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-information {
+        height: initial;
+    }
+    .footer-end {
+        width: 100%;
+        padding-top: 25px;
+        margin-top: 57px;
+    }
+    .footer-end h6 {
+        width: 220px;
+        line-height: 24px;
+        text-align: center;
+        margin: auto;
+    }
+    .item-list-check h6 {
+        margin-top: 6px;
+    }
+    .item-list-check.item-standard h6 {
+        margin-top: 6px;
+    }
+}

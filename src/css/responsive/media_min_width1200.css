@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1200px) {
+    .content-container {
+        width: 80%;
+    } 
+    .header-container {
+        width: 80%;
+    }
+    .main-text {
+        width: initial;
+    }
+    .card {
+        width: 80%;
+    }
+    .comment {
+        width: 80%;
+    }
+    .container {
+        width: 80%;
+    }
+    .text-in-touch {
+        width: 80%;
+        margin: auto;
+    }
+    .footer-get-in-touch {
+        width: 80%;
+        margin: auto;
+    }
+}

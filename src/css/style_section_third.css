@@ -1,0 +1,37 @@
+section.third {
+    background-color: #FAFAFA;
+    height: 655px;
+}
+
+.rating {
+    padding-top: 3px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.comment {
+    height: 356px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin: auto;
+}
+.comment-item {
+    height: 244px;
+    width: 327px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.comment-content {
+    width: 234px;
+    height: 72px;
+    color: #737373;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-left: 35px;
+}
+.comment-content h6 {
+    margin: 20px 0; 
+}

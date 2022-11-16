@@ -1,0 +1,311 @@
+section.first {
+    height: 817px;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('../img/doctors.jpg');
+      background-size: cover;
+}
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.left-header {
+    width: 50%;
+    display: inline-block;
+}
+.title {
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+}
+.title h3 {
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu div {
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    display: inline;
+    margin-right: 21px;
+    height: 24px; 
+    letter-spacing: 0.2px;
+}
+
+.right-header {
+    width: 50%;
+    display: inline-block;
+    width: 328px;
+}
+.blue-button.individual-pricing-button {
+    text-align: center;
+    width: 223px;
+    height: 52px;
+    letter-spacing: 0.2px;
+}
+
+.individual-pricing-button{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    color:#ffffff;
+    justify-content: center;
+}
+.menu_pricing {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+content {
+    display: flex;
+    justify-content: center;
+}
+.main-content {
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-left {
+    max-width: 580px;
+}
+.main-text {
+    font-weight: 800;
+    line-height: 80px;
+    color:#ffffff;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+.main-text h1 {
+    margin: 0;
+}
+.second-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+    max-width: 460px;
+}
+.second-text h4 {
+    font-weight: lighter;
+}
+.buttons {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    display: flex;
+    color: #ffffff;
+}
+
+.blue-button.main-content-button {
+    background-color: #23A6F0;
+    line-height: 52px;
+    text-align: center;
+    margin-right: 10px;
+}
+.white-transparent-button.main-content-button {
+    border: 1px solid #ffffff ;
+    text-align: center;
+    line-height: 52px;
+}
+
+form.reservation {
+    width: 330px;
+    height: 610px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.title-section  {
+    height: 107px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 112px;
+}
+.title-section h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+.title-section p {
+    width: 470px;
+    height: 40px;
+    margin: 0;
+    color: #737373;
+    font-size: 14px;
+    line-height: 20px;
+}
+.blue-button {
+    width: 180px;
+    height: 40px;
+    background-color: #23A6F0;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-weight: 700;
+}
+.blue-button:hover {
+    transition: 0.3s;
+    background-color: #138ed4;
+}
+.blue-button:active {
+    background-color: #0d7ab9;
+}
+.white-transparent-button {
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+}
+.white-transparent-button:hover {
+    transition: 0.3s;
+    background-color: #0000002a;
+}
+.white-transparent-button:active {
+    background-color: #0000005e;
+}
+.main-content-button {
+    width: 196px;
+    height: 52px;
+    border-radius: 37px;
+}
+.reservation-button {
+    width: 248px;
+    height: 52px;
+    margin: 20px 40px 0 42px;
+}
+form h3 {
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 0.1px;
+}
+.data h6 {
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+}
+.data {
+    width: 248px;
+    height: 84px;
+    margin-left: 42px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+input {
+    width: 219px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    padding-left: 21px;
+}
+.email h6 {
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+}
+.email {
+    width: 248px;
+    height: 84px;
+    margin-left: 42px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+.institution h6 {
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+}
+.institution {
+    width: 248px;
+    height: 84px;
+    margin-left: 42px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+select {
+    width: 248px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    border: 1px solid #E6E6E6;
+}
+
+.time h6 {
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+}
+.time {
+    width: 248px;
+    height: 84px;
+    margin-left: 42px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+select#placowka {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    padding-left: 21px;
+    color: #737373;
+}
+select#czas {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    padding-left: 21px;
+    color: #737373;
+}

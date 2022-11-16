@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt</title>
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="style-old.css" type="text/css"> -->
+    <link rel="stylesheet" href="src/css/style_section_first.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style_section_second.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style_section_third.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style_section_fourth.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style_section_fifth.css" type="text/css">
+    <link rel="stylesheet" href="src/css/style_section_sixth.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_max_width_414.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_max_width768.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_max_width992.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_min_width992.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_min_width1200.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_min_width1400.css" type="text/css">
+    <link rel="stylesheet" href="src/css/responsive/media_min_width1800.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <section class="first">
+            <header>
+                <div class="header-container">
+                    <div class="title-menu">
+                        <div class="title">
+                            <h3>Centrum Medyczne</h3>
+                        </div>
+                        <div class="icon-menu">
+                            <iconify-icon icon="bx:menu-alt-right" style="color: #737373;" width="46" height="28"
+                                onclick="togglemenu()">
+                            </iconify-icon>
+                        </div>
+                    </div>
+                    <div id="menuList" class="menu">
+                        <div><a href="#ofert">Oferta</a></div>
+                        <div><a href="#opinion">Opinie</a></div>
+                        <div><a href="#faq">Pytania</a></div>
+                        <div><a href="#pricing">Cennik</a></div>
+                        <div><a href="#contact">Kontakt</a></div>
+                    </div>
+                    <button id="buttonPricingIndividual" class="blue-button individual-pricing-button">
+                        Indywidualna wycena
+                    </button>
+                    <!-- <div class="icon-menu">
+                        <iconify-icon icon="bx:menu-alt-right" style="color: #737373;" width="23" height="14"
+                            onclick="togglemenu()">
+                        </iconify-icon> -->
+                </div>
+
+                </div>
+            </header>
+            <content>
+                <div class="content-container">
+                    <div class="content-left">
+                        <div class="main-content">
+                            <div class="main-text">
+                                <h1>Zapisz się na badania okresowe</h1>
+                            </div>
+                            <div class="second-text">
+                                <h4>
+                                    Witamy na internetowej stronie przychodni. Nasza oferta skierowana jest zarówno do
+                                    dzieci, jak i dorosłych.
+                                </h4>
+                            </div>
+                            <div class="buttons">
+                                <!-- <div class="first-button">Rezerwuj wizytę</div>
+                                <div class="second-button">Czytaj więcej</div> -->
+                                <button id="buttonReservation" class="blue-button main-content-button">Rezerwuj
+                                    wizytę</button>
+                                <button id="buttonReadMore" class="white-transparent-button main-content-button">
+                                    Czytaj więcej
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <form id="formReservationVisit" class="reservation">
+                            <div>
+                                <h3>Zarezerwuj wizytę</h3>
+                            </div>
+                            <div class="data">
+                                <h6>Imię i nazwisko</h6>
+                                <div class="form-contents"><label><input type="text" name="Imie"
+                                            placeholder="Jan Kowalski"></label></div>
+                            </div>
+                            <div class="email">
+                                <h6>Adres email*</h6>
+                                <div class="form-contents"><label><input type="text" name="Email"
+                                            placeholder="email@gmail.com"></label></div>
+                            </div>
+                            <div class="institution">
+                                <h6>Placówka*</h6>
+                                <div class="row">
+                                    <label for="placowka"></label>
+                                    <select id="placowka">
+                                        <option value="" disabled selected>Proszę wybrać</option>
+                                        <option>Kraków</option>
+                                        <option>Katowice</option>
+                                        <option>Warszawa</option>
+                                        <option>Gdańsk</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="time">
+                                <h6>Godzina*</h6>
+                                <label for="czas"></label>
+                                <select id="czas">
+                                    <option value="" disabled selected>Proszę wybrać</option>
+                                    <option>8:00</option>
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                </select>
+                            </div>
+
+                            <button id="buttonReservationVisit" class="blue-button reservation-button">Rezerwuj</button>
+
+                        </form>
+                    </div>
+            </content>
+        </section>
+        <section class="second">
+            <div class="title-section">
+                <a id="ofert"></a>
+                <div>
+                    <h2>Oferta przychodni</h2>
+                    <p>
+                        Nasza przychodnia ofertuje pakiety w zależności od Twoich potrzeb
+                    </p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="card">
+                    <div class="card-item">
+                        <div class="card-header">
+                            <div class="card-header-item">
+                                <div class="icon">
+                                    <iconify-icon icon="bi:people" style="color: #23a6f0;" width="25" height="19">
+                                    </iconify-icon>
+                                </div>
+                                <div class="main-text-card">
+                                    <h5>Pomoc w nagłych przypadkach</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h6>- Interwencje pogotowia ratunkowego</h6>
+                            <h6>- Konsultacje telefoniczne lub online</h6>
+                            <h6>- Opieka nocna w przychodni</h6>
+                            <h6>- Wykonanie koniecznych badań</h6>
+                            <a class="learn-link" href="#">Dowiedz się więcej</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-header">
+                            <div class="card-header-item">
+                                <div class="icon">
+                                    <iconify-icon icon="bi:people" style="color: #23a6f0;" width="25" height="19">
+                                    </iconify-icon>
+                                </div>
+                                <div class="main-text-card">
+                                    <h5>Opieka onkologiczna</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h6>- Leczenie systemowe nowotworów</h6>
+                            <h6>- Diagnostyka onologiczna</h6>
+                            <h6>- Rehabilitacja onkologiczna</h6>
+                            <h6>- Opieka paliatywna</h6>
+                            <h6>- Refundacja leków</h6>
+                            <a class="learn-link" href="#">Dowiedz się więcej</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <div class="card-header">
+                            <div class="card-header-item">
+                                <div class="icon">
+                                    <iconify-icon icon="bi:people" style="color: #23a6f0;" width="25" height="19">
+                                    </iconify-icon>
+                                </div>
+                                <div class="main-text-card">
+                                    <h5>Pakiety medyczne dla seniorów</h5>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h6>- Badania laboratoryjne i diagnostyczne </h6>
+
+                                <h6>- Zabiegi ambulatoryjne</h6>
+                                <h6>- Telefoniczna Pomoc Medyczna</h6>
+                                <h6>- Szybki dostęp do specjalistów bez skierowania</h6>
+                                <a class="learn-link" href="#">Dowiedz się więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third">
+            <div class="title-section">
+                <a id="opinion"></a>
+                <div>
+                    <h2>Opinie pacjentów</h2>
+                    <p>
+                        Nasza przychodnia może pochwalić się bardzo dobrymi ocenami naszej kadry wsród pacjentów
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-item">
+                    <div class="rating">
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                    </div>
+                    <div class="comment-content">
+                        <h6>Polecam lekarza Jana Kowalskiego, wykonał szczegółowa diagnozę i badanie,
+                            wszystko szczegółowo wyjaśnił. Miły i profesjonalny.
+                        </h6>
+                        <img src="src/img/user.1.jpg">
+                    </div>
+
+                </div>
+
+                <div class="comment-item">
+                    <div class="rating">
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                    </div>
+                    <div class="comment-content">
+                        <h6>Doktor Anna Nowak – bardzo profesjonalna i miła Pani doktor,
+                            trafna diagnoza, przepisane leczenie szybko przyniosło ulgę. Dziękuje!
+                        </h6>
+                        <img src="src/img/user.2.jpg">
+                    </div>
+
+                </div>
+
+                <div class="comment-item">
+                    <div class="rating">
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                        <iconify-icon icon="ant-design:star-filled" style="color: #f3cd03;" width="18" height="18">
+                        </iconify-icon>
+                    </div>
+                    <div class="comment-content">
+                        <h6>Jestem bardzo zadowolona, szybka i fachowa pomoc lekarska,
+                            Pan doktor bardzo kompetentny, pomógł naszemu synkowi.
+                        </h6>
+                        <img src="src/img/user.3.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="fourth">
+            <div class="title-section">
+                <a id="faq"></a>
+                <div>
+                    <h2>Pytania</h2>
+                    <p>
+                        Najczęściej zadawane pytania
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Czy można zarezerować wizytę przez internet?</h5>
+
+                            <h6>Tak, można dokonać rezerwacji online na stronie przychodni.</h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Jakie badania potrzebne są do wystawienia zwolnienia L-4?</h5>
+
+                            <h6>Imię, nazwisko, adres oraz termin zwolnienia. </h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Co jest dowodem ubezpieczenia zdrowotnego?</h5>
+
+                            <h6>Przychodnia posiada dostęp do Elektronicznej Weryfikacji Uprawnień Świadczeniobiorców.
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Komu przysługują bezpłatne leki 75+? </h5>
+
+                            <h6>Przysługują wszystkim seniorom 75+ ze schorzeniem mieszczącym się w zakresie wskazań
+                                objętych refundacją.</h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Jaki jest okres na dostarczenie skierowania?</h5>
+
+                            <h6>Oryginał skierowania należy dostarczyć nie później niż w terminie 14 dni roboczych od
+                                dnia dokonania wpisu.</h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>W jaki sposób mogę zamówić receptę?</h5>
+
+                            <h6>Zamówienia można składać za pomocą formularza przesyłanego na adres e-mail lub
+                                telefonicznie.</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Co to jest e-recepta?</h5>
+
+                            <h6>E-recepta jest elektronicznym dokumentem, który zastępuje receptę tradycyjną, czyli
+                                papierową.</h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Czy zrealizuję e-receptę za granicą?</h5>
+
+                            <h6>Niestety w przypadku e-recepty nie można jej zrealizować poza terenem Polski.</h6>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div class="arrow rotated"></div>
+                        <div class="content-row-card">
+                            <h5>Kiedy przychodnia jest otwarta?</h5>
+
+                            <h6>Przychodnia jest otwarta 7 dni w tygodniu od poniedziałku do niedzieli. W soboty i
+                                niedziele od 9:00 do 14:00.</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="fifth">
+            <div class="title-section">
+                <a id="pricing"></a>
+                <div>
+                    <h2>Cennik</h2>
+                    <p>
+                        Cennik zawiera pakiety badań oferowanych przez przychodnię
+                    </p>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="free">
+                    <div class="pricing-header">
+                        <h3>PODSTAWOWY</h3>
+                        <h5>Podstawowe badania okresowe</h5>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-free">
+                            <h2>10</h2>
+                        </div>
+                        <div class="dollar-icon-month">
+                            <h5>zł</h5>
+                            </iconify-icon>
+                            <h6>Za pakiet badań</h6>
+                        </div>
+                    </div>
+                    <div class="list-check">
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Morfologia krwi</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Retykulocyty</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Odczyn opadania krwinek czerwonych</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Cholesterol całkowity</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Test obciążenia glukozą</h6>
+                        </div>
+                    </div>
+                    <button id="buttonPriceBasic" class="blue-button try-for-free">Sprawdź szczegóły</button>
+                </div>
+                <div class="standard">
+                    <div class="pricing-header-standard">
+                        <h3>STANDARD</h3>
+                        <h5>Badania dla kierowców</h5>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-free">
+                            <h2>200</h2>
+                        </div>
+                        <div class="dollar-icon-month">
+                            <h5>zł</h5>
+                            <h6>Za pakiet badań</h6>
+                        </div>
+                    </div>
+                    <div class="list-check">
+                        <div class="item-list-check item-standard">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Kontrola wzroku</h6>
+                        </div>
+                        <div class="item-list-check item-standard">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Kontrola układu oddechowego</h6>
+                        </div>
+                        <div class="item-list-check item-standard">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Kontrola układu nerwowego i krążeniowego</h6>
+                        </div>
+                        <div class="item-list-check item-standard">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>EKG</h6>
+                        </div>
+                        <div class="item-list-check item-standard">
+                            <iconify-icon icon="mdi:check-circle" style="color: #bdbdbd;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Badania laryngologiczne</h6>
+                        </div>
+                    </div>
+                    <button id="buttonPriceStandard" class="blue-button try-for-free">Sprawdź szczegóły</button>
+                </div>
+                <div class="premium">
+                    <div class="pricing-header">
+                        <h3>PREMIUM</h3>
+                        <h5>Zaawansowane badania krwi</h5>
+                    </div>
+                    <div class="price-item">
+                        <div class="price-free">
+                            <h2>400</h2>
+                        </div>
+                        <div class="dollar-icon-month">
+                            <h5>zł</h5>
+                            </iconify-icon>
+                            <h6>Za pakiet badań</h6>
+                        </div>
+                    </div>
+                    <div class="list-check">
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Borelioza IgM</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>PCT (prokalcytonina)</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Toxoplazmoza przeciwciała IgG,</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Przeciwciała Anty-Tg (AHTG)</h6>
+                        </div>
+                        <div class="item-list-check">
+                            <iconify-icon icon="mdi:check-circle" style="color: #2dc071;" width="32" height="32">
+                            </iconify-icon>
+                            <h6>Grupa krwi</h6>
+                        </div>
+                    </div>
+                    <button id="buttonPricePremium" class="blue-button try-for-free">Sprawdź szczegóły</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="sixth">
+            <a id="contact"></a>
+            <div class="header-section-sixth">
+                <div class="text-in-touch">
+                    <div class="left-section-in-touch">
+                        <div class="main-text-in-touch">
+                            <h2>Skontaktuj się z nami</h2>
+                        </div>
+                        <div class="second-text-in-touch">
+                            <p>
+                                Zamów konsultację online z lekarzem
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right-section-in-touch">
+                        <div class="email-in-touch">
+                            <form id="formInTouch" class="content">
+                                <label>
+                                    <input type="text" name="Email" placeholder="Twój adres email">
+                                </label>
+                                <button id="buttonInTouch" class="blue-button in-touch">
+                                    Wyślij
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-information">
+                    <div class="footer-get-in-touch">
+                        <div class="fotter-container-1">
+                            <div class="heading-footer">
+                                <h3>Kontakt z nami</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>Znajdziesz nas także w mediach społecznościowych</p>
+                            </div>
+                            <div class="footer-icon">
+                                <iconify-icon icon="akar-icons:facebook-fill" style="color: #23a6f0;" width="23"
+                                    height="23">
+                                </iconify-icon>
+                                <iconify-icon icon="akar-icons:instagram-fill" style="color: #23a6f0;" width="23"
+                                    height="23">
+                                </iconify-icon>
+                                <iconify-icon icon="akar-icons:twitter-fill" style="color: #23a6f0;" width="23"
+                                    height="23">
+                                </iconify-icon>
+                            </div>
+                        </div>
+                        <div class="fotter-container-2">
+                            <div class="heading-footer">
+                                <h3>Informacje</h3>
+                            </div>
+                            <div class="fotter-link">
+                                <p><a>O nas</a></p>
+                                <p><a>Nasi specjaliści</a></p>
+                                <p><a>Usługi</a></p>
+                                <p><a>Co leczymy</a></p>
+                            </div>
+                        </div>
+                        <div class="fotter-container-3">
+                            <div class="heading-footer">
+                                <h3>Co oferujemy</h3>
+                            </div>
+                            <div class="fotter-link">
+                                <p><a>E-wizyta</a></p>
+                                <p><a>E-zwolenienie</a></p>
+                                <p><a>E-skierowanie</a></p>
+                                <p><a>E-recepta</a></p>
+                            </div>
+                        </div>
+                        <div class="fotter-container-4">
+                            <div class="heading-footer">
+                                <h3>Inne</h3>
+                            </div>
+                            <div class="fotter-link">
+                                <p><a>Regulamin strony</a></p>
+                                <p><a>Polityka prywatności</a></p>
+                                <p><a>Ustawienia cookies</a></p>
+                                <p><a>Aplikacja</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <h6>Template by Captain Design. Created by Martyna Wójcicka.</h6>
+                </div>
+            </div>
+            <div id="snackbar" class="snackbar slide-top">
+                <iconify-icon icon="ant-design:warning-filled" style="color: white;" width="30" height="30">
+                </iconify-icon>
+                <h5>Funkcja chwilowo niedostępna. <br /> Spróbuj ponownie później.</h5>
+            </div>
+        </section>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
